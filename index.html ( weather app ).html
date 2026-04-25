@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Weather App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="app">
+        <h1>Weather App</h1>
+
+        <input id="city" placeholder="Enter city..." />
+
+        <button type="button" onclick="getWeather()">Search</button>
+        <div class="card" id="weatherCard">
+
+            <h2 id="cityName">--</h2>
+
+            <img id="weatherIcon" />
+
+            <h1 id="temp">--°C</h1>
+
+            <p id="desc">--</p>
+
+            <div class="extras">
+                <div>💧 <span id="humidity">--</span>%</div>
+                <div>💨 <span id="wind">--</span> km/h</div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- ✅ SCRIPT MUST BE HERE (OUTSIDE ALL DIVS) -->
+    <script src="script.js"></script>
+
+</body>
+
+</html>
